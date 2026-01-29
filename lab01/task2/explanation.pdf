@@ -1,0 +1,43 @@
+Lab 1.2 - View Layer Explanation
+Student: Nuray Koshan
+
+The Counter app demonstrates React's role as the "view layer" in 
+web development. As explained in Chapter 1 "React is just the view 
+layer", React focuses exclusively on transforming data into UI, 
+leaving other concerns like routing or data fetching to other 
+libraries.
+
+In my Counter component:
+1. I used useState(0) to create count state
+2. The UI displays the current count value: {count}
+3. Buttons have onClick handlers that update the state
+4. When state changes, React automatically re-renders the component
+
+This data flow is central to React: 
+State (data) → Component (view) → UI (output)
+
+When I click the "Increment" button:
+1. The onClick handler calls setCount(count + 1)
+2. React updates the count state
+3. React re-renders the Counter component with the new state
+4. The displayed number updates from, say, 0 to 1
+
+The magic happens behind the scenes with React's Virtual DOM, 
+mentioned in Chapter 1 "Performance matters". Instead of directly 
+manipulating the real DOM (which is slow), React:
+1. Creates a lightweight JavaScript representation (Virtual DOM)
+2. Compares it with the previous version (diffing)
+3. Calculates the minimal changes needed (patching)
+4. Applies only those changes to the real DOM
+
+For the Counter, this means only the number text updates when I 
+click buttons - not the entire button or container. This makes 
+React applications fast and efficient.
+
+Setting up the project was straightforward using Vite, as suggested 
+in "Setting up a new React project". The clear separation between 
+data (state) and presentation (components) makes React code easier 
+to understand and maintain than traditional jQuery code where 
+logic and DOM manipulation are mixed together.
+
+Word count: 250

@@ -1,0 +1,41 @@
+Lab 1.1 - Comparison Report
+Student: Nuray Koshan
+
+For this lab, I implemented the same highlight toggle feature twice: 
+once with jQuery (imperative) and once with React (declarative).
+
+In the jQuery version, I wrote step-by-step instructions:
+1. I selected the button using $('#toggleBtn')
+2. I attached a click handler with .click()
+3. Inside the handler, I found the paragraph with $('#text')
+4. I toggled the class with .toggleClass('highlight')
+5. I manually updated the button text based on the state
+
+This felt like giving detailed directions to the browser for every action.
+
+In the React version, I took a different approach:
+1. I created state with: const [isHighlighted, setIsHighlighted] = useState(false)
+2. I described how the UI should look: className={isHighlighted ? 'highlight' : ''}
+3. I set up an onClick handler that only updates the state
+4. React automatically handled all DOM updates
+
+The key difference is control vs declaration. With jQuery, I controlled 
+every DOM operation. With React, I declared the desired outcome, and 
+React figured out how to make it happen.
+
+As mentioned in Chapter 1 "Declarative UI structures", React lets us 
+describe what the UI should look like rather than how to change it. 
+The section "Data changes over time" explains how React updates the 
+UI when data (state) changes.
+
+Why is React's approach better for scaling? 
+- With complex UIs, manually tracking DOM changes becomes error-prone
+- React's component model makes code more organized and reusable  
+- The Virtual DOM optimizes updates, so performance remains good
+- State management is centralized and predictable
+
+For this simple toggle, both approaches work. But for larger 
+applications with many interactive elements, React's declarative 
+model would be much easier to maintain and extend.
+
+Word count: 285
