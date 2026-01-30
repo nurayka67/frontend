@@ -1,0 +1,87 @@
+/* Общие стили */
+.app, .manager {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: -apple-system, sans-serif;
+}
+
+/* Карточки */
+.counter-card, .profile-card {
+  border: 2px solid #4a90e2;
+  border-radius: 12px;
+  padding: 20px;
+  margin: 20px 0;
+  background: #f8faff;
+}
+
+/* Кнопки */
+.button-group, .user-buttons {
+  display: flex;
+  gap: 10px;
+  margin: 15px 0;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  background: #4a90e2;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #2a70c2;
+  transform: translateY(-2px);
+}
+
+.reset {
+  background: #e74c3c;
+}
+
+.active {
+  background: #27ae60;
+}
+
+/* Статусы */
+.loading, .error {
+  padding: 30px;
+  text-align: center;
+  font-size: 1.2em;
+  border-radius: 10px;
+}
+
+.loading {
+  background: #fff3cd;
+  color: #856404;
+}
+
+.error {
+  background: #f8d7da;
+  color: #721c24;
+}
+
+/* Текст */
+.explanation, .note, .info {
+  margin-top: 20px;
+  padding: 15px;
+  background: #e8f4f8;
+  border-radius: 8px;
+  font-size: 0.9em;
+}
+
+.count-display {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #2c3e50;
+}
+
+.stats {
+  background: #ecf0f1;
+  padding: 10px;
+  border-radius: 6px;
+  margin-top: 10px;
+}
