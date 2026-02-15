@@ -1,0 +1,36 @@
+# AI Usage Report - Lab 04
+
+## Student Information
+- Name: Nuray Koshan
+- Student ID: SE Eng
+- Date: 14.02.2026
+- Lab: Lab 04 
+
+## AI Tool Used
+- Tool: ChatGPT
+- Version: GPT-3.5
+
+## Purpose of AI Usage
+- Understanding controlled components concept
+- Getting examples of validation regex
+- Clarifying component refactoring patterns
+
+## Prompts Used
+1. "Explain how preventDefault works in React forms"
+2. "Show example of validation on input change"
+3. "How to extract components in React?"
+
+## How I Modified/Verified AI Output
+- Renamed variables to camelCase
+- Added comments to explain logic
+- Fixed syntax errors
+- Added missing error states
+
+## What I Learned
+- How to handle form events in React
+- The importance of preventDefault
+- How to break down components
+
+## Code Ownership Declaration
+I declare that while I used AI as a consultant, I wrote all the code myself, understand every line, and can explain the logic if asked.
+
