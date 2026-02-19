@@ -1,0 +1,88 @@
+.user-card-search {
+  background: white;
+  border-radius: 12px;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  animation: slideIn 0.3s ease;
+  border: 1px solid transparent;
+}
+
+.user-card-search:hover {
+  transform: translateX(5px);
+  border-color: #4ecdc4;
+  box-shadow: 0 8px 25px rgba(78, 205, 196, 0.2);
+}
+
+.user-avatar-search {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  text-transform: uppercase;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  flex-shrink: 0;
+}
+
+.user-info-search {
+  flex: 1;
+}
+
+.user-name-search {
+  color: #333;
+  margin: 0 0 5px;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.user-email-search {
+  color: #666;
+  margin: 0 0 8px;
+  font-size: 0.9rem;
+}
+
+.user-age-search {
+  color: #999;
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.age-icon {
+  font-weight: 500;
+  color: #666;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@media (max-width: 600px) {
+  .user-card-search {
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+  }
+  
+  .user-avatar-search {
+    width: 80px;
+    height: 80px;
+    font-size: 32px;
+  }
+}

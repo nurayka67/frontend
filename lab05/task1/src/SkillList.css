@@ -1,0 +1,88 @@
+.skills-container {
+  background: white;
+  border-radius: 15px;
+  padding: 25px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+}
+
+.skills-heading {
+  color: #333;
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border-bottom: 2px solid #f0f0f0;
+  padding-bottom: 15px;
+}
+
+.skills-count {
+  margin-left: auto;
+  background: #667eea;
+  color: white;
+  padding: 5px 15px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: normal;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 12px;
+}
+
+.skill-item {
+  background: #f8f9fa;
+  border-radius: 10px;
+  padding: 12px 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.3s ease;
+  border: 1px solid transparent;
+}
+
+.skill-item:hover {
+  transform: translateX(5px);
+  border-color: #667eea;
+  box-shadow: 0 5px 15px rgba(102, 126, 234, 0.1);
+}
+
+.skill-name {
+  font-weight: 600;
+  color: #333;
+}
+
+.skill-badge {
+  padding: 5px 15px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.skill-badge.beginner {
+  background: #6c757d;
+  color: white;
+}
+
+.skill-badge.intermediate {
+  background: #007bff;
+  color: white;
+}
+
+.skill-badge.expert {
+  background: #28a745;
+  color: white;
+}
+
+.no-skills {
+  text-align: center;
+  color: #999;
+  padding: 30px;
+  background: #f8f9fa;
+  border-radius: 10px;
+  font-style: italic;
+}
