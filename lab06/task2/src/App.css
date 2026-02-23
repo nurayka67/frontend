@@ -1,0 +1,190 @@
+/* Стили для красивого отображения курса */
+
+.course-detail {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+  color: white;
+}
+
+.course-detail h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+  border-bottom: 3px solid rgba(255,255,255,0.3);
+  padding-bottom: 1rem;
+}
+
+.course-info {
+  background: rgba(255,255,255,0.1);
+  backdrop-filter: blur(10px);
+  padding: 2rem;
+  border-radius: 15px;
+  margin: 2rem 0;
+  border: 1px solid rgba(255,255,255,0.2);
+}
+
+.course-info p {
+  font-size: 1.2rem;
+  margin: 1rem 0;
+  padding: 0.5rem;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.course-info strong {
+  color: #ffd700;
+  min-width: 120px;
+  display: inline-block;
+}
+
+.course-info h2 {
+  color: #ffd700;
+  margin: 1.5rem 0 1rem 0;
+  font-size: 1.8rem;
+}
+
+.navigation {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.navigation a {
+  display: inline-block;
+  padding: 1rem 2rem;
+  background: white;
+  color: #667eea;
+  text-decoration: none;
+  border-radius: 50px;
+  font-weight: bold;
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.navigation a:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+  background: #ffd700;
+  color: #333;
+}
+
+/* Стили для карточек курсов на главной */
+.courses-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.course-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.course-card {
+  background: white;
+  border-radius: 15px;
+  padding: 1.5rem;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
+  border: 1px solid #e0e0e0;
+}
+
+.course-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 30px rgba(102, 126, 234, 0.3);
+  border-color: #667eea;
+}
+
+.course-card h3 {
+  color: #333;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid #667eea;
+  padding-bottom: 0.5rem;
+}
+
+.course-card p {
+  color: #666;
+  margin: 0.5rem 0;
+  font-size: 1rem;
+}
+
+.course-card strong {
+  color: #764ba2;
+}
+
+/* Кнопка сортировки */
+.sort-controls {
+  display: flex;
+  justify-content: flex-end;
+  padding: 1rem 2rem;
+}
+
+.sort-btn {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border: none;
+  padding: 0.8rem 2rem;
+  border-radius: 50px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+}
+
+.sort-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(102, 126, 234, 0.4);
+}
+
+/* Ошибка */
+.error-page {
+  background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+  color: white;
+  padding: 3rem;
+  border-radius: 20px;
+  text-align: center;
+  font-size: 1.5rem;
+  margin: 2rem;
+  box-shadow: 0 10px 30px rgba(245, 87, 108, 0.3);
+}
+
+/* Навигация */
+.navbar {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  padding: 1rem 2rem;
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 0.5rem 1.5rem;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+  font-size: 1.1rem;
+  letter-spacing: 0.5px;
+  border: 2px solid transparent;
+}
+
+.nav-link:hover {
+  background: rgba(255,255,255,0.2);
+  transform: translateY(-2px);
+  border-color: rgba(255,255,255,0.5);
+}
+
+/* Для активной ссылки (опционально) */
+.nav-link.active {
+  background: rgba(255,255,255,0.3);
+  font-weight: bold;
+}
